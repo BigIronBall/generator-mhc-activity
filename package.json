@@ -1,0 +1,37 @@
+{
+  "name": "generator-mhc-act",
+  "version": "0.1.3",
+  "description": "买好车活动页面脚手架",
+
+  "files": [
+    "app",
+    "router"
+  ],
+
+  "main": "app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maihaoche/generator-mhc-act.git"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "generator-mhc-act",
+    "买好车",
+    "买好车活动页面",
+    "maihaoche.com",
+    "maihaoche",
+    "mhc"
+  ],
+  "author": "文烈 <jquerytech@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maihaoche/generator-mhc-act/issues"
+  },
+  "homepage": "https://github.com/maihaoche/generator-mhc-act#readme",
+  "dependencies": {
+    "yeoman-generator": "^0.21.1"
+  }
+}
