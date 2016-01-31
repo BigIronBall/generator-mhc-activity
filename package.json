@@ -1,7 +1,7 @@
 {
   "name": "generator-mhc-activity",
   "version": "0.1.2",
-  "description": "Scaffolding for activity pages of Maihaoche.com",
+  "description": "Scaffolding of activity pages for Maihaoche.com",
   "files": [
     "generators/app",
     "generators/mobile"
