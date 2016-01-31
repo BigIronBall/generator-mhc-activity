@@ -1,7 +1,7 @@
 {
   "name": "generator-mhc-activity",
   "version": "0.1.1",
-  "description": "买好车活动页面脚手架",
+  "description": "Scaffolding for activity pages of Maihaoche.com",
   "files": [
     "app",
     "router"
@@ -31,5 +31,8 @@
   "bugs": {
     "url": "https://github.com/maihaoche/generator-mhc-activity/issues"
   },
-  "homepage": "https://github.com/maihaoche/generator-mhc-activity"
+  "homepage": "https://github.com/maihaoche/generator-mhc-activity",
+  "dependencies": {
+    "chalk": "^1.1.1"
+  }
 }
