@@ -1,6 +1,6 @@
 {
-  "name": "generator-mhc-act",
-  "version": "0.1.4",
+  "name": "generator-mhc-activity",
+  "version": "0.1.0",
   "description": "买好车活动页面脚手架",
   "files": [
     "app",
@@ -12,25 +12,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maihaoche/generator-mhc-act.git"
+    "url": "git+https://github.com/maihaoche/generator-mhc-activity.git"
   },
   "keywords": [
-    "yeoman-generator",
-    "generator-mhc-act",
     "买好车",
-    "买好车活动页面",
-    "maihaoche.com",
+    "活动页面",
     "maihaoche",
-    "mhc"
+    "mhc",
+    "activity",
+    "generator",
+    "yeoman"
   ],
   "author": "文烈 <jquerytech@gmail.com>",
+  "contributors": [
+    "Ourai Lin <ourairyu@hotmail.com> (http://ourai.ws/)"
+  ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/maihaoche/generator-mhc-act/issues"
+    "url": "https://github.com/maihaoche/generator-mhc-activity/issues"
   },
-  "homepage": "https://github.com/maihaoche/generator-mhc-act#readme",
-  "dependencies": {
-    "maihaoche-welcome": "^0.1.0",
-    "yeoman-generator": "^0.21.1"
-  }
+  "homepage": "https://github.com/maihaoche/generator-mhc-activity"
 }
