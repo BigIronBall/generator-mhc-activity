@@ -1,6 +1,6 @@
 var generators = require('yeoman-generator');
 
-var welcome = require('maihaoche-welcome');
+var welcome = require('./welcome');
 
 //var yosay = require('yosay');
 //var chalk = require('chalk');
