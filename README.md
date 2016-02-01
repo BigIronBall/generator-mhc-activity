@@ -20,10 +20,12 @@ npm install -g generator-mhc-activity
 
 ### PC 端页面
 
-**暂不支持**
+```bash
+yo mhc-activity
+```
 
 ### 移动端页面
 
 ```bash
-yo mhc-activity:mobile
+yo mhc-activity --mobile=true
 ```

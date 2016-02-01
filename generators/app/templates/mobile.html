@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="grey">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <title><%= title %></title>
+    <meta name="keywords" content="<%= keywords %>">
+    <meta name="description" content="<%= description %>">
+    <link rel="icon" href="https://dn-mhc.qbox.me/maihaocheIcon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="http://dn-mhc.qbox.me/bower_components/normalize-css/normalize.css">
+    <script src="http://dn-mhc.qbox.me/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://dn-mhc.qbox.me/assets/jquery-cookie/jquery.cookie.js"></script>
+    <script src="http://dn-mhc.qbox.me/assets/js/jquery.lazyload.js"></script>
+    <script>
+      (function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+              var clientWidth = docEl.clientWidth;
+              if (!clientWidth) return;
+              docEl.style.fontSize = (24 * clientWidth / 750) + 'px';
+            };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        //doc.addEventListener('DOMContentLoaded', recalc, false);
+        recalc();
+      })(document, window);
+    </script>
+  </head>
+  <body>
+    <style>
+      .header .to-login {
+        top: 9px;
+      }
+
+      .header {
+        position: relative;
+        height: 43px;
+        border-bottom: 1px solid #E6E6E6;
+        z-index: 12000;
+        background: #fff
+      }
+
+      .header .logo {
+        width: 90px;
+        height: 60px;
+        position: absolute;
+        left: 15px;
+        top: 0
+      }
+
+      .header .head-txt {
+        position: absolute;
+        width: 115px;
+        height: 14px;
+        left: 115px;
+        top: 14px
+      }
+
+      .header .user-name {
+        position: absolute;
+        right: 5px;
+        height: 45px;
+        line-height: 45px;
+        text-align: right;
+        font-size: 14px;
+        color: #606060
+      }
+
+      .header .user-name span {
+        font-size: 1.1rem;
+        text-decoration: underline
+      }
+
+      .header .to-login {
+        position: absolute;
+        right: 13px;
+        top: 7px;
+        width: 24px;
+        height: 24px
+      }
+    </style>
+    <div class="header">
+      <a href="$!homeLinkHttps" data-ajax="false">
+        <span class="logo"><img src="http://dn-mhc.qbox.me/h5_index/img/3.png" width="90"></span>
+        <span class="head-txt"><img src="http://dn-mhc.qbox.me/h5_index/img/4.png" width="115"></span>
+      </a>
+      <div class="login-box">
+        <span class="to-login J_toLogin">
+          <a href="/wap/login.htm">
+            <img src="http://dn-mhc.qbox.me/h5_index/img/5.png" width="24">
+          </a>
+        </span>
+      </div>
+    </div>
+
+    <input type="hidden" id="isLogin" name="isLogin" value="0">
+
+    <script>
+      var MHC_ACT = {
+        act_id:'',
+        link_arr:[],
+        img_link_arr:[]
+      }
+    </script>
+
+    <!-- 活动页面代码 begin -->
+    <!-- 活动页面代码 end -->
+
+    <style>
+      .fixed-pc{ z-index: 100}
+      .fixed-wap{ z-index: 100}
+
+      .h5-ads{background: #F3F3F3;width:100%;padding: 0 0 4rem;}
+      .h5-ads .block-title{position:relative;}
+      .h5-ads .block-title hr{width: 30%;}
+      .h5-ads .block-title .left-line{position: absolute;left: 1.5rem;top:1.5rem;}
+      .h5-ads .block-title .right-line{position: absolute;right: 1.5rem;top:1.5rem;}
+      .h5-ads .block-title p{color:#5C5F67;line-height:4rem;text-align: center;font-size:1.17rem;}
+      .h5-ads .ad-banner-box dd img{width: 92%;margin: 1rem 4%;}
+      .h5-ads .ad-block-box{padding: 0 0.7rem 5rem;background:#F3F3F3;width: 100%;height: 29.2rem;box-sizing: border-box; }
+      .h5-ads .ad-block-box .ad-block{background: white;margin: 0.2rem 0.17rem;float: left;}
+      .h5-ads .ad-block-box .ad-block a{ text-decoration: none;}
+      .h5-ads .ad-block-box .ad-block img{width:14.58rem;}
+      .h5-ads .ad-block-box .ad-block .car-name{color:#1e1e1e;font-size:1rem;text-align: left;width: 14.58rem;padding:0 0.6rem;box-sizing:border-box;white-space:nowrap;overflow: hidden;text-overflow: ellipsis;}
+      .h5-ads .ad-block-box .ad-block .car-price{color:#1e1e1e;font-size:1.25rem;text-align: left;font-weight: bold;margin-bottom: 1rem;width: 14.58rem;padding:0 0.6rem;box-sizing:border-box;white-space:nowrap;overflow: hidden;text-overflow: ellipsis; }
+      .h5-ads .ad-block-box .ad-block .car-price span{font-size:0.83rem;font-weight: normal;}
+
+      .pc-ads{display: block;width:100%;background: #F3F3F3;padding-top: 30px;}
+      .pc-ads .inner{display: block;width:1060px;margin: 0 auto;padding:10px 0 90px;}
+      .pc-ads .block-title{position: relative;}
+      .pc-ads .block-title hr{width:486px;}
+      .pc-ads .block-title .left-line{position: absolute;left: 0;top:4px; z-index: 1;}
+      .pc-ads .block-title .right-line{position: absolute;right: 0;top:4px; z-index: 1;}
+      .pc-ads .block-title p{color:#5C5F67;text-align: center;font-size:14px;width: 1060px; position: relative; z-index: 1; top: 5px;}
+      .pc-ads .block-actiivties{display: block;width:1060px;height:200px;padding: 15px 0;position: relative; z-index: 1;}
+      .pc-ads .block-actiivties a img{width: 346px;position: absolute;}
+      .pc-ads .block-actiivties .pic-1{left: 0;}
+      .pc-ads .block-actiivties .pic-2{left: 357px;}
+      .pc-ads .block-actiivties .pic-3{right:0;}
+      .pc-ads .block-cars{margin: 25px 0 0 -6px;width: 1072px;height:300px;}
+      .pc-ads .block-cars .ad-car{background: white;width: 256px;float: left;margin:0 6px; }
+      .pc-ads .block-cars .ad-car a{text-decoration: none;}
+      .pc-ads .block-cars .ad-car img{width: 256px;}
+      .pc-ads .block-cars .ad-car .car-name{width: 256px;color:#5E5E5E;font-size:14px;padding: 0 17px;box-sizing:border-box;text-align: left;white-space:nowrap;overflow: hidden;text-overflow: ellipsis;}
+      .pc-ads .block-cars .ad-car .car-price{width: 256px;color:#353535;font-size:20px;padding: 0 17px;font-weight: bold;box-sizing:border-box;text-align: left;white-space:nowrap;overflow: hidden;text-overflow: ellipsis;}
+      .pc-ads .block-cars .ad-car .car-price span{font-size:12px;color:#4A5056;font-weight: normal;}
+    </style>
+    <script>
+      (function($){
+        var removeLinkEdit = null;
+        var currentLink = null;
+
+        if (MHC_ACT.link_arr.length > 0) {
+          $('.J_Link').each(function(index, item){
+              $(item).attr('href', MHC_ACT.link_arr[index]).attr('data-index', index);
+          })
+        }
+      })($)
+    </script>
+
+    <script>
+      $("img.lazy").lazyload({
+        threshold : 500,
+        effect : "fadeIn"
+      });
+    </script>
+
+    <!-- requirejs -->
+    <script src="http://dn-mhc.qbox.me/bower_components/requirejs/require.js"></script>
+
+    <!-- 在线预约功能 -->
+    <link rel="stylesheet" href="http://dn-mhc.qbox.me/site_mhc/components/subscribe/subscribe.css">
+    <script>
+      requirejs.config({
+        baseUrl: 'http://dn-mhc.qbox.me/bower_components',
+        paths: {
+          jquery: 'jquery/dist/jquery.min',
+          subscribe: '../site_mhc/components/subscribe/subscribe'
+        }
+      });
+
+      $(document).ready(function(){
+        requirejs(['subscribe'], function(Subscribe) {
+          window.subscribe = null;
+          if(window.MHC && window.MHC.subscribe && window.MHC.subscribe.config){
+              window.subscribe = new Subscribe(window.MHC.subscribe.config);
+          }
+          else{
+            window.subscribe = new Subscribe();
+          }
+        });
+      })
+    </script>
+    <input name="onlineBookingToken" class="i_text" type="hidden" value="" disabled>
+  </body>
+</html>
