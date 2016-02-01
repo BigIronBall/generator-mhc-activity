@@ -29,3 +29,11 @@ yo mhc-activity
 ```bash
 yo mhc-activity --mobile=true
 ```
+
+页面生成之后，在 `index.html` 中特定的注释之间写入自己的代码。
+
+```html
+<!-- 活动页面代码 begin -->
+<div>你自己的代码</div>
+<!-- 活动页面代码 end -->
+```
